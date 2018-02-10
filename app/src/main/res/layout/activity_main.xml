@@ -4,39 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.padhil.mofo.MainActivity">
+    tools:context="com.example.padhil.mofo.MainActivity"
+    android:background="@drawable/RockyMountain">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/nametxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="117dp"
+        android:layout_marginTop="111dp"
         android:ems="10"
         android:hint="@string/name"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/passtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/nametxt"
+        android:layout_alignStart="@+id/nametxt"
+        android:layout_below="@+id/nametxt"
+        android:layout_marginTop="13dp"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerbtn"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/registerbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:background="@color/colorAccent"
-        android:backgroundTint="@color/colorAccent"
-        android:text="@string/login"
-        android:textColor="@android:color/background_light"
+        android:text="@string/register"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_toEndOf="@+id/passtxt"
+        android:layout_toRightOf="@+id/passtxt"
+        android:text="@string/powered_by"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="@string/skybee"
+        android:textColor="@android:color/white"
         android:textStyle="bold" />
 </RelativeLayout>
