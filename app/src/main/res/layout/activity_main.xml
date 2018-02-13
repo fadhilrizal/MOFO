@@ -8,24 +8,26 @@
     android:background="@drawable/rockymountain">
 
     <EditText
-        android:id="@+id/nametxt"
+        android:id="@+id/usernametxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/passtxt"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="111dp"
+        android:layout_marginBottom="27dp"
+        android:background="@android:color/white"
         android:ems="10"
-        android:hint="@string/name"
+        android:hint="@string/username"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/passtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/nametxt"
-        android:layout_alignStart="@+id/nametxt"
-        android:layout_below="@+id/nametxt"
-        android:layout_marginTop="13dp"
+        android:layout_above="@+id/loginbtn"
+        android:layout_alignLeft="@+id/usernametxt"
+        android:layout_alignStart="@+id/usernametxt"
+        android:layout_marginBottom="21dp"
+        android:background="@android:color/white"
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword" />
@@ -48,7 +50,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/register"
-        android:textStyle="bold" />
+        android:textColor="@android:color/white" />
 
     <TextView
         android:id="@+id/textView3"
@@ -72,4 +74,34 @@
         android:text="@string/skybee"
         android:textColor="@android:color/white"
         android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/usernametxt"
+        android:layout_toLeftOf="@+id/usernametxt"
+        android:layout_toStartOf="@+id/usernametxt"
+        app:srcCompat="@drawable/usernamelogo" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@id/passtxt"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        app:srcCompat="@drawable/passwordlogo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/registerbtn"
+        android:layout_alignStart="@+id/registerbtn"
+        android:layout_below="@+id/registerbtn"
+        android:layout_marginTop="105dp"
+        android:text="Login with :"
+        android:textColor="@android:color/white" />
+
 </RelativeLayout>
