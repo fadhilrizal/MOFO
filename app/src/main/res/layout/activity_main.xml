@@ -104,6 +104,5 @@
         android:text="Login with :"
         android:textColor="@android:color/white" />
 
-    //test
 
 </RelativeLayout>
