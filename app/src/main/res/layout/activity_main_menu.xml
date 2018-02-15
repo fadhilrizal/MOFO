@@ -7,10 +7,7 @@
     tools:context="com.example.padhil.mofo.MainMenu">
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menu"
-        tools:layout_editor_absoluteX="163dp"
-        tools:layout_editor_absoluteY="153dp" />
+        android:text="MainMenu"/> //tambah
 </android.support.constraint.ConstraintLayout>
