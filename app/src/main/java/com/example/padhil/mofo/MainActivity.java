@@ -1,7 +1,9 @@
 package com.example.padhil.mofo;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,5 +24,10 @@ public class MainActivity extends AppCompatActivity {
         //test
 
       
+    }
+
+    public void Regis(View view) {
+        Intent hey = new Intent(MainActivity.this, Second.class);
+        startActivity(hey);
     }
 }
