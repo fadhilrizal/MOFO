@@ -41,7 +41,8 @@
         android:background="@android:color/black"
         android:text="@string/login"
         android:textColor="@android:color/white"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="loginbtn"/>
 
     <TextView
         android:id="@+id/registerbtn"
@@ -50,7 +51,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="@string/register"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:onClick="registerbtn"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -75,24 +77,6 @@
         android:textColor="@android:color/white"
         android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_alignTop="@+id/usernametxt"
-        android:layout_toLeftOf="@+id/usernametxt"
-        android:layout_toStartOf="@+id/usernametxt"
-        app:srcCompat="@drawable/usernamelogo" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_alignTop="@id/passtxt"
-        app:srcCompat="@drawable/passwordlogo" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -106,31 +90,19 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
         android:layout_alignLeft="@+id/loginbtn"
         android:layout_alignStart="@+id/loginbtn"
         android:layout_alignTop="@+id/imageView4"
-        app:srcCompat="@drawable/facebook_logos" />
+        app:srcCompat="@drawable/pic_facebook" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="35dp"
         android:layout_height="45dp"
-        android:layout_below="@id/textView"
-        android:layout_toRightOf="@id/imageView3"
-        app:srcCompat="@drawable/gmail" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_above="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3"
-        android:layout_alignRight="@+id/textView3"
-        app:srcCompat="@drawable/mofo" />
-
-    //testt
-
-
+        android:layout_alignEnd="@+id/loginbtn"
+        android:layout_alignRight="@+id/loginbtn"
+        android:layout_below="@+id/textView"
+        app:srcCompat="@drawable/pic_gmail" />
 </RelativeLayout>
