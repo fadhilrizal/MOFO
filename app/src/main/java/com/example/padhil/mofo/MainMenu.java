@@ -1,10 +1,15 @@
 package com.example.padhil.mofo;
 
-import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-/**
- * Created by padhil on 15/02/18.
- */
 
-public class MainMenu extends Activity {
+public class MainMenu extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_menu);
+
+    }
 }
