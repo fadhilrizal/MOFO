@@ -23,5 +23,10 @@ public class MainActivity extends AppCompatActivity {
         Intent r1 = new Intent(MainActivity.this, Second.class);
         startActivity(r1);
     }
+
+    public void Regis(View view) {
+        Intent hey = new Intent(MainActivity.this, Second.class);
+        startActivity(hey);
+    }
 }
 
