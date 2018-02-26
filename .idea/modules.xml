@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MOFO.iml" filepath="$PROJECT_DIR$/MOFO.iml" />
+      <module fileurl="file://C:\Users\Delia farizki\AndroidStudioProjects\MOFO-Delia\MOFO.iml" filepath="C:\Users\Delia farizki\AndroidStudioProjects\MOFO-Delia\MOFO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MOFO-Delia.iml" filepath="$PROJECT_DIR$/.idea/MOFO-Delia.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Delia farizki\AndroidStudioProjects\MOFO-Delia\app\app.iml" filepath="C:\Users\Delia farizki\AndroidStudioProjects\MOFO-Delia\app\app.iml" />
     </modules>
   </component>
 </project>
