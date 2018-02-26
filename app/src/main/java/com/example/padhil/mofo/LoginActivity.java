@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,12 +15,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loginbtn(View view) {
-        Intent l1 = new Intent(MainActivity.this, MainMenu.class);
+        Intent l1 = new Intent(LoginActivity.this, MainMenu.class);
         startActivity(l1);
         }
 
     public void registerbtn(View view) {
-        Intent r1 = new Intent(MainActivity.this, Second.class);
+        Intent r1 = new Intent(LoginActivity.this, RegisterActivity.class);
         startActivity(r1);
     }
 }

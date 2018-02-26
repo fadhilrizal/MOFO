@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.padhil.mofo.Second"
-    android:background="@drawable/rockymountain">
+    tools:context="com.example.padhil.mofo.Second">
 
 
     <TextView
@@ -18,7 +17,6 @@
         android:layout_marginLeft="34dp"
         android:layout_marginStart="34dp"
         android:layout_marginTop="114dp"
-        android:textColor="@android:color/white"
         android:text="REGISTER NOW" />
 
     <EditText
@@ -94,6 +92,5 @@
         android:layout_alignStart="@+id/editText6"
         android:layout_below="@+id/editText6"
         android:layout_marginTop="49dp"
-        android:text="Submit"
-        android:textColor="@android:color/white" />
+        android:text="Submit" />
 </RelativeLayout>
