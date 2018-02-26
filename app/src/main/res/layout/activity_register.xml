@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.padhil.mofo.Second">
+    tools:context="com.example.padhil.mofo.RegisterActivity">
 
 
     <TextView
@@ -92,5 +92,6 @@
         android:layout_alignStart="@+id/editText6"
         android:layout_below="@+id/editText6"
         android:layout_marginTop="49dp"
-        android:text="Submit" />
+        android:text="Submit"
+        android:onClick="submit"/>
 </RelativeLayout>
