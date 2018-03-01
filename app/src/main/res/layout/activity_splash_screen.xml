@@ -13,6 +13,8 @@
         android:layout_centerVertical="true"
         android:text="MOUNTAIN FORCAST"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="italic" />
+
+
 
 </RelativeLayout>
