@@ -91,31 +91,13 @@
         android:text="@string/skybee"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView"
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/loginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/registerbtn"
-        android:layout_alignStart="@+id/registerbtn"
-        android:layout_below="@+id/registerbtn"
-        android:layout_marginTop="80dp"
-        android:text="Login with :" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="198dp" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="35dp"
-        android:layout_height="45dp"
-        android:layout_alignLeft="@+id/login"
-        android:layout_alignStart="@+id/login"
-        android:layout_alignTop="@+id/imageView4"
-        app:srcCompat="@drawable/pic_facebook" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="35dp"
-        android:layout_height="45dp"
-        android:layout_alignEnd="@+id/login"
-        android:layout_alignRight="@+id/login"
-        android:layout_below="@+id/textView"
-        app:srcCompat="@drawable/pic_gmail" />
 </RelativeLayout>
