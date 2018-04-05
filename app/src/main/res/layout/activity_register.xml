@@ -7,6 +7,8 @@
     tools:context="com.example.padhil.mofo.RegisterActivity">
 
 
+
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -19,21 +21,10 @@
         android:layout_marginTop="114dp"
         android:text="REGISTER NOW" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_below="@+id/editText2"
-        android:layout_marginTop="13dp"
-        android:background="@android:color/white"
-        android:ems="10"
-        android:hint="Email"
-        android:inputType="textEmailAddress" />
+
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/nameRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/textView2"
@@ -46,12 +37,25 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/emailRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText"
-        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/nameRegister"
+        android:layout_alignStart="@+id/nameRegister"
+        android:layout_below="@+id/nameRegister"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/usernameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailRegister"
+        android:layout_alignStart="@+id/emailRegister"
+        android:layout_below="@+id/emailRegister"
         android:layout_marginTop="14dp"
         android:background="@android:color/white"
         android:ems="10"
@@ -59,12 +63,12 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/passRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText3"
-        android:layout_alignStart="@+id/editText3"
-        android:layout_below="@+id/editText3"
+        android:layout_alignLeft="@+id/usernameRegister"
+        android:layout_alignStart="@+id/usernameRegister"
+        android:layout_below="@+id/usernameRegister"
         android:layout_marginTop="15dp"
         android:background="@android:color/white"
         android:ems="10"
@@ -72,26 +76,30 @@
         android:inputType="textPassword" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText4"
-        android:layout_alignStart="@+id/editText4"
-        android:layout_below="@+id/editText4"
+        android:layout_alignLeft="@+id/passRegister"
+        android:layout_alignStart="@+id/passRegister"
+        android:layout_below="@+id/passRegister"
         android:layout_marginTop="15dp"
         android:ems="10"
         android:background="@android:color/white"
         android:hint="Phone Number"
         android:inputType="number" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <Button
+        android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText6"
-        android:layout_alignStart="@+id/editText6"
-        android:layout_below="@+id/editText6"
-        android:layout_marginTop="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_alignStart="@+id/phone"
+        android:layout_marginBottom="162dp"
+        android:background="@android:color/black"
+        android:onClick="submit"
         android:text="Submit"
-        android:onClick="submit"/>
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
 </RelativeLayout>

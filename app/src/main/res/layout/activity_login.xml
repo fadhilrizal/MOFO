@@ -8,18 +8,19 @@
     >
 
     <TextView
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/usernametxt"
-        android:layout_alignLeft="@+id/usernametxt"
-        android:layout_alignStart="@+id/usernametxt"
-        android:text="@string/username" />
+        android:layout_above="@+id/email"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:text="Email Address" />
 
     <EditText
-        android:id="@+id/usernametxt"
+        android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/passtxt"
+        android:layout_above="@+id/password"
         android:layout_marginBottom="25dp"
         android:layout_toLeftOf="@+id/textView3"
         android:layout_toStartOf="@+id/textView3"
@@ -31,25 +32,25 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/passtxt"
-        android:layout_toLeftOf="@+id/loginbtn"
-        android:layout_toStartOf="@+id/loginbtn"
+        android:layout_above="@+id/password"
+        android:layout_toLeftOf="@+id/login"
+        android:layout_toStartOf="@+id/login"
         android:text="@string/password" />
 
     <EditText
-        android:id="@+id/passtxt"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/loginbtn"
-        android:layout_alignLeft="@+id/usernametxt"
-        android:layout_alignStart="@+id/usernametxt"
+        android:layout_above="@+id/login"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
         android:layout_marginBottom="35dp"
         android:background="@android:color/white"
         android:ems="10"
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/loginbtn"
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/registerbtn"
@@ -104,8 +105,8 @@
         android:id="@+id/imageView3"
         android:layout_width="35dp"
         android:layout_height="45dp"
-        android:layout_alignLeft="@+id/loginbtn"
-        android:layout_alignStart="@+id/loginbtn"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignStart="@+id/login"
         android:layout_alignTop="@+id/imageView4"
         app:srcCompat="@drawable/pic_facebook" />
 
@@ -113,8 +114,8 @@
         android:id="@+id/imageView4"
         android:layout_width="35dp"
         android:layout_height="45dp"
-        android:layout_alignEnd="@+id/loginbtn"
-        android:layout_alignRight="@+id/loginbtn"
+        android:layout_alignEnd="@+id/login"
+        android:layout_alignRight="@+id/login"
         android:layout_below="@+id/textView"
         app:srcCompat="@drawable/pic_gmail" />
 </RelativeLayout>

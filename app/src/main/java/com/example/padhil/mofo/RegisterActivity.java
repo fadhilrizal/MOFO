@@ -18,12 +18,12 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private EditText fullnameRegister;
     private EditText emailRegister;
+    private EditText nameRegister;
     private EditText usernameRegister;
-    private EditText passwordRegister;
-    private EditText phoneRegister;
-    private Button btnsubmit;
+    private EditText passRegister;
+    private EditText phone;
+    private Button submit;
     private FirebaseAuth firebaseAuth;
 
     @Override
@@ -31,18 +31,17 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        fullnameRegister = (EditText) findViewById(R.id.fullnameRegister);
         emailRegister = (EditText) findViewById(R.id.emailRegister);
+        nameRegister = (EditText) findViewById(R.id.nameRegister);
         usernameRegister = (EditText) findViewById(R.id.usernameRegister);
-        passwordRegister = (EditText) findViewById(R.id.passwordRegister);
-        phoneRegister = (EditText) findViewById(R.id.phoneRegister);
+        passRegister = (EditText) findViewById(R.id.passRegister);
+        phone = (EditText) findViewById(R.id.phone);
         firebaseAuth = FirebaseAuth.getInstance();
     }
 
     public void submit(View view) {
-
         final ProgressDialog progressDialog = ProgressDialog.show(RegisterActivity.this, "Please wait...", "Processing...", true);
-        (firebaseAuth.createUserWithEmailAndPassword(emailRegister.getText().toString(), passwordRegister.getText().toString())).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        (firebaseAuth.createUserWithEmailAndPassword(emailRegister.getText().toString(), passRegister.getText().toString())).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
 
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -63,6 +62,5 @@ public class RegisterActivity extends AppCompatActivity {
             }
 
         });
-
     }
 }

@@ -18,24 +18,24 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText emailtxt;
-    private EditText passwordtxt;
-    private Button loginbtn;
-    private FirebaseAuth firebaseAuth;
+  private EditText email;
+  private EditText password;
+  private Button login;
+  private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
-        emailtxt = (EditText) findViewById(R.id.emailtxt);
-        passwordtxt = (EditText) findViewById(R.id.passwordtxt);
+        email = (EditText) findViewById(R.id.email);
+        password = (EditText) findViewById(R.id.password);
         firebaseAuth = FirebaseAuth.getInstance();
     }
 
     public void loginbtn(View view) {
         final ProgressDialog progressDialog = ProgressDialog.show(LoginActivity.this, "Please wait...", "Processing...", true);
-        (firebaseAuth.signInWithEmailAndPassword(emailtxt.getText().toString(), passwordtxt.getText().toString()))
+        (firebaseAuth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString()))
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -53,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     }
                 });
-        }
+    }
 
     public void registerbtn(View view) {
         Intent r1 = new Intent(LoginActivity.this, RegisterActivity.class);
