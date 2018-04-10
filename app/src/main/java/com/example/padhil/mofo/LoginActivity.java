@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -63,14 +64,23 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void loginbtn(View view) {
-        final ProgressDialog progressDialog = ProgressDialog.show(LoginActivity.this, "Please wait...", "Processing...", true);
+
+        if (TextUtils.isEmpty(email.getText().toString())){
+            Toast.makeText(LoginActivity.this, "Please fill in", Toast.LENGTH_LONG).show();
+            return;
+        }else if(TextUtils.isEmpty(password.getText().toString())) {
+            Toast.makeText(LoginActivity.this, "Please fill in", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+            final ProgressDialog progressDialog = ProgressDialog.show(LoginActivity.this, "Please wait...", "Processing...", true);
         (firebaseAuth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString()))
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         progressDialog.dismiss();
 
-                        if (task.isSuccessful()) {
+                       if (task.isSuccessful()) {
                             Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_LONG).show();
                             Intent i = new Intent(LoginActivity.this, MainMenu.class);
                             i.putExtra("Email", firebaseAuth.getCurrentUser().getEmail());
