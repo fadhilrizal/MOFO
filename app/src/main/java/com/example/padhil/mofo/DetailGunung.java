@@ -3,6 +3,7 @@ package com.example.padhil.mofo;
 import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
 import android.widget.ImageView;
 
 import java.util.List;
