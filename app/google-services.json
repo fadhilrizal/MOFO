@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "621097067779-m9sb6gfujmirjfv8h9t96gl4mls3jk6i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.padhil.mofo",
+            "certificate_hash": "2b1dee47607922e63af5a652bc053101cb46c169"
+          }
+        },
+        {
           "client_id": "621097067779-0tn75lgcure888tpdfn6tk5r1t1k2in8.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "621097067779-0tn75lgcure888tpdfn6tk5r1t1k2in8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
