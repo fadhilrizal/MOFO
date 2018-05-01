@@ -4,22 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context="com.example.padhil.mofo.MainMenu">
 
-    <TextView
+    <ImageButton
+        android:id="@+id/btn_weather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:text="MainMenu"
-        android:id="@+id/textView6" />
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="190dp"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:onClick="goWeather"
+        app:srcCompat="@mipmap/weather" />
 
-    <TextView
-        android:id="@+id/textView7"
+    <ImageButton
+        android:id="@+id/btn_event"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:srcCompat="@mipmap/event" />
+
+    <ImageButton
+        android:id="@+id/btn_photos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="190dp"
+        android:layout_marginTop="280dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:srcCompat="@mipmap/photos" />
+
+    <ImageButton
+        android:id="@+id/btn_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="280dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        app:srcCompat="@mipmap/settings" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Forcast"
-        android:onClick="forcast"/>
+        android:layout_marginBottom="33dp"
+        android:text="SIGN OUT"
+        android:onClick="logout"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"/>
 </RelativeLayout>

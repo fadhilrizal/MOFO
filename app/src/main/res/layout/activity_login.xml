@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context="com.example.padhil.mofo.LoginActivity"
     >
 
     <TextView
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/email"
         android:layout_alignLeft="@+id/email"
         android:layout_alignStart="@+id/email"
+        android:textStyle="bold"
         android:text="Email Address" />
 
     <EditText
@@ -26,7 +27,6 @@
         android:layout_toStartOf="@+id/textView3"
         android:background="@android:color/white"
         android:ems="10"
-
         android:inputType="textPersonName" />
 
     <TextView
@@ -35,6 +35,7 @@
         android:layout_above="@+id/password"
         android:layout_toLeftOf="@+id/login"
         android:layout_toStartOf="@+id/login"
+        android:textStyle="bold"
         android:text="@string/password" />
 
     <EditText
@@ -55,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/registerbtn"
         android:layout_centerHorizontal="true"
-        android:background="@android:color/black"
+        android:background="@color/colorAccent"
         android:text="@string/login"
         android:textColor="@android:color/white"
         android:textStyle="bold"
@@ -68,7 +69,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:onClick="registerbtn"
-        android:text="@string/register" />
+        android:text="I don't have an account" />
 
     <TextView
         android:id="@+id/textView3"
