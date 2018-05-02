@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MOFO.iml" filepath="$PROJECT_DIR$/MOFO.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MOFO-updated.iml" filepath="$PROJECT_DIR$/MOFO-updated.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Delia farizki\AndroidStudioProjects\MOFO123\MOFO.iml" filepath="C:\Users\Delia farizki\AndroidStudioProjects\MOFO123\MOFO.iml" />
+      <module fileurl="file://C:\Users\Delia farizki\AndroidStudioProjects\MOFO123\MOFO-updated.iml" filepath="C:\Users\Delia farizki\AndroidStudioProjects\MOFO123\MOFO-updated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MOFO123.iml" filepath="$PROJECT_DIR$/.idea/MOFO123.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
