@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@drawable/mountainback"
     tools:context="com.example.padhil.mofo.RegisterActivity">
 
 
@@ -20,6 +20,8 @@
         android:layout_marginLeft="34dp"
         android:layout_marginStart="34dp"
         android:layout_marginTop="114dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
         android:text="REGISTER NOW" />
 
 
@@ -94,13 +96,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/phone"
-        android:layout_alignStart="@+id/phone"
-        android:layout_marginBottom="162dp"
-        android:background="@android:color/black"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="142dp"
+        android:background="@android:color/white"
         android:onClick="submit"
-        android:text="Submit"
-        android:textColor="@android:color/white"
-        android:textStyle="bold" />
+        android:text="Submit" />
 
 </RelativeLayout>

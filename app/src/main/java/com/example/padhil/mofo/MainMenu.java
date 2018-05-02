@@ -19,7 +19,7 @@ public class MainMenu extends AppCompatActivity {
     }
 
     public void goWeather(View view) {
-        Intent weather = new Intent(MainMenu.this, MenuForcastActivity.class);
+        Intent weather = new Intent(MainMenu.this, SearchActivity.class);
         startActivity(weather);
     }
 
