@@ -40,12 +40,15 @@ public class LoginActivity extends AppCompatActivity {
   private EditText password;
   private Button login;
   private FirebaseAuth firebaseAuth;
+  
     private CallbackManager callbackManager;
     private LoginButton loginButton;
+
     private static final String TAG = "MAIN_ACTIVITY";
     private SignInButton mGooglebtn;
     private static final int RC_SIGN_IN = 1;
     private GoogleApiClient mGoogleApiClient;
+
 
     private FirebaseAuth.AuthStateListener mAuthListener;
 
@@ -80,12 +83,15 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         mGooglebtn = findViewById(R.id.sign_in_button);
+
         firebaseAuth = FirebaseAuth.getInstance();
+
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 if(firebaseAuth.getCurrentUser() != null){
+
                     startActivity(new Intent(LoginActivity.this, MainMenu.class));
                 }
             }
@@ -158,14 +164,17 @@ public class LoginActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         callbackManager.onActivityResult(requestCode, resultCode, data);
+
         if (requestCode == RC_SIGN_IN) {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = task.getResult(ApiException.class);
                 firebaseAuthWithGoogle(account);
+
                 Intent intent = new Intent(LoginActivity.this,MainMenu.class);
                 startActivity(intent);
+              
             } catch (ApiException e) {
                 // Google Sign In failed, update UI appropriately
                 Log.w(TAG, "Google sign in failed", e);
@@ -173,6 +182,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         }
     }
+
 
     @Override
     protected void onStart() {
@@ -187,6 +197,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void firebaseAuthWithGoogle(GoogleSignInAccount account) {
         AuthCredential credential = GoogleAuthProvider.getCredential(account.getIdToken(), null);
+
         firebaseAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -194,9 +205,11 @@ public class LoginActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithCredential:success");
+
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             Intent intent = new Intent(LoginActivity.this,MainMenu.class);
                             startActivity(intent);
+
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
